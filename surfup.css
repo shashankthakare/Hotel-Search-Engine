@@ -1,0 +1,15 @@
+.main{
+	background: url(surfup.png) no-repeat;
+}
+
+.main
+{
+    background:surfup.png;
+	background-position: 0 0;
+	width: 900px;
+	height: 358px;
+	z-index:-1;
+    float:left;
+	
+}
+

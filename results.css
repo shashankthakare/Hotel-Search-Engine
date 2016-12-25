@@ -1,0 +1,10 @@
+#display
+{
+    height: 400px;
+    width: 900px;
+    font-style: normal;
+    font-family: Lucida Console;
+    
+    float: left;
+    overflow: scroll;
+}

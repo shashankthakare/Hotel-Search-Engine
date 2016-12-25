@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>yellow</title>
+    <link href="results.css" rel="stylesheet" type="text/css" />
+     <link href="maincss.css" rel="stylesheet" type="text/css" />
+    <link href="surfup.css" rel="stylesheet" type="text/css" />
+    <link href="sprites2.css" rel="stylesheet" type="text/css" />
+    <link href="sprites.css" rel="stylesheet" type="text/css" />
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.pajinate.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#paging_container1').pajinate();
+			});
+			
+			$(document).ready(function(){
+				$('#paging_container2').pajinate();
+			});		
+
+			$(document).ready(function(){
+				$('#paging_container3').pajinate({
+					items_per_page : 5,
+					item_container_id : '.alt_content',
+					nav_panel_id : '.alt_page_navigation'
+					
+				});
+			});	
+			</script> 
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+           
+                $.ajax({
+                    url: 'http://capi.travelnxt.com/api/tcs/Hotels?q=pune&top=10&skip=10',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    jsonp: 'callback',
+                    jsonpCallback: 'jsonpCallback',
+
+                    success: function (feed) {
+
+                        console.log(feed.Hotels[1].Address.AdressLine1);
+                        // Crete_results_div(feed);
+                        //document.write(feed);
+                        //alert("results");
+                        for (var i = 0; i < feed.Hotels.length; i++) {
+
+                            $("#display").append(feed.Hotels[i].Name);
+                            $("#display").append(feed.Hotels[i].Address.AdressLine1);
+                            $("#display").append(feed.Hotels[i].Address.AdressLine2);
+                            $("#display").append(feed.Hotels[i].City);
+                            $("#display").append(feed.Hotels[i].Image);
+                            $("#display").append(feed.Hotels[i].Rating);
+
+                        }
+
+                       
+                    }
+              
+            });
+
+        });
+
+        function jsonpCallback(data) {
+            $('#jsonpResult').text(data.message);
+        }
+
+       
+
+    </script>
+</head>
+<body id="body">
+    <div class="main">
+   
+        <div id="translucent_upper">
+            <div class="cart">
+            </div>
+            <div class="search">
+            </div>
+            <span id="upper_text"><a href="index.html">Other links</a></span>
+        </div>
+        <div id="translucent">
+            <div class="logo">
+            </div>
+            <div id="user_pass">
+                <input id="email" type="text" value="email" />
+                <input id="pass" type="text" value="password" />
+                <input id="sign_in" type="button" value="sign-in" />
+                <input id="sign_up" type="button" value="sign-up" />
+            </div>
+        </div>
+        <div class="orange_strip">
+        </div>
+    </div>
+    <div class="white_strip">
+    </div>
+    <!hotel search>
+    <div class="orange_strip_thick">
+  <div class="orange_strip_dark">
+        </div>
+    </div>
+    <div class="clear"></div>
+   <div id="wrapper">
+			<div id="paging_container1" class="container">
+				<h2>Vanilla</h2>
+				<div class="page_navigation"></div>
+				
+				<ul class="content">
+				<div id="display">
+					 <li><p>One</p></li> 
+					 <li><p>Two</p></li> 
+					 <li><p>Three</p></li> 
+					 <li><p>Four</p></li> 
+					 <li><p>Five</p></li> 
+					 <li><p>Six</p></li> 
+					 <li><p>Seven</p></li> 
+					 <li><p>Eight</p></li> 
+					 <li><p>Nine</p></li> 
+					 <li><p>Ten</p></li> 
+					 <li><p>Eleven</p></li> 
+					 <li><p>Twelve</p></li> 
+					 <li><p>Thirteen</p></li> 
+					 <li><p>Fourteen</p></li> 
+					 <li><p>Fifteen</p></li> 
+					 <li><p>Sixteen</p></li> 
+					 </display>
+				</ul>	
+			</div>	
+    <div class="clear"></div>
+    <div class="white_strip_thick">
+    </div>
+    <div class="orange_strip">
+    </div>
+    <div class="clear">
+    </div>
+    <br />
+    <div class="footer">
+        <div class="list">
+            <ul class="footer_lists">
+                <li class="footer_title footer_elements">More travel options</li>
+                <li class="footer_elements">Hotels in India</li>
+                <li class="footer_elements">Indian domestic flights</li>
+                <li class="footer_elements">Indian car rentals</li>
+                <li class="footer_elements">Holidays in India</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul class="footer_lists">
+                <li class="footer_title footer_elements">Great deals on<br />
+                </li>
+                <li class="footer_elements">Hotels<br />
+                </li>
+                <li class="footer_elements">Flights<br />
+                </li>
+                <li class="footer_elements">Flights and hotels<br />
+                </li>
+                <li class="footer_elements">International Holidays<br />
+                </li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul class="footer_lists ">
+                <li class="footer_title footer_elements">Connect with us</li>
+                <li class="footer_elements_connect">
+                    <div class="facebook">
+                    </div>
+                    facebook</li>
+                <li class="footer_elements_connect">
+                    <div class="twitter">
+                    </div>
+                    twitter</li>
+                <li class="footer_elements_connect">
+                    <div class="google">
+                    </div>
+                    google+</li>
+                <li class="footer_elements_connect">
+                    <div class="phone">
+                    </div>
+                    +91 123456789</li>
+            </ul>
+        </div>
+    </div>
+    <br />
+    <div class="bottom">
+        <span class="about">About us</span> <span class="about">|</span> <span class="about">
+            FAQs</span> <span class="about">|</span> <span class="about">Support</span>
+        <span class="about">|</span> <span class="about">Blog</span> <span class="about">|</span>
+        <span class="about">Terms of use</span> <span id="tav">&copy;Tavisca Solutions Pvt.
+            Ltd.</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.phone, .plane, .search, .twitter, .arow, .cart, .facebook, .google, .logo{
+	background: url(sprites2.png) no-repeat;
+}
+
+.phone
+{
+    background:sprites2.png;
+	background-position: -333px -206px ;
+	width: 15px;
+	height: 20px;
+}
+
+.plane
+{
+    background:sprites2.png;
+	background-position: -276px -363px ;
+	width: 29px;
+	height: 32px;
+}
+
+.search
+{
+    background:sprites2.png;
+	background-position: -421px -241px ;
+	width: 42px;
+	height: 31px;
+}
+
+.twitter
+{
+    background:sprites2.png;
+	background-position: -233px -202px ;
+	width: 16px;
+	height: 17px;
+}
+
+.arow
+{
+    background:sprites2.png;
+	background-position: -125px -223px ;
+	width: 65px;
+	height: 249px;
+}
+
+.cart
+{
+    background:sprites2.png;
+	background-position: -441px -113px ;
+	width: 42px;
+	height: 30px;
+}
+
+.facebook
+{
+    background:sprites2.png;
+	background-position: -354px -77px ;
+	width: 13px;
+	height: 24px;
+}
+
+.google
+{
+    background:sprites2.png;
+	background-position: -435px -44px ;
+	width: 17px;
+	height: 23px;
+}
+
+.logo
+{
+    background:sprites2.png;
+	background-position: -131px -86px ;
+	width: 171px;
+	height: 54px;
+}
+

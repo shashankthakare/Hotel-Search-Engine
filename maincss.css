@@ -1,0 +1,310 @@
+#body
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#translucent
+{
+    background-color: black;
+    width: 900px;
+    height: 59px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.6;
+    z-index: 2;
+    float: left;
+}
+#translucent_upper
+{
+    background-color: black;
+    width: 900px;
+    height: 31px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    z-index: 2;
+    float: left;
+}
+
+.search
+{
+    float: right;
+    margin-right: 20px;
+}
+.cart
+{
+    float: right;
+    margin-right: 10px;
+}
+#upper_text
+{
+    color: rgb(154,154,156);
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+.orange_strip
+{
+    width: 900px;
+    float: left;
+    height: 4px;
+    background-color: rgb(214,152,79);
+    z-index: 3;
+}
+.logo
+{
+    float: left;
+    margin-left: 40px;
+    margin-top: 2px;
+}
+#user_pass
+{
+    float: right;
+    margin-right: 90px;
+    margin-top: 10px;
+}
+#email
+{
+    font-weight: bolder;
+    background-color: rgb(19,32,41);
+}
+#pass
+{
+    font-weight: bolder;
+    background-color: rgb(19,32,41);
+}
+#sign_in
+{
+    background-color: rgb(20,150,164);
+}
+#sign_up
+{
+    background-color: rgb(217,148,71);
+}
+.white_strip
+{
+    width: 900px;
+    float: left;
+    height: 3px;
+    background-color: white;
+}
+.orange_strip_thick
+{
+    width: 900px;
+    float: left;
+    height: 40px;
+    background-color: rgb(214,152,79);
+}
+.where
+{
+    float: left;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+#plan
+{
+    float: right;
+    margin-right: 50px;
+    margin-top: 5px;
+    background-color: rgb(20,150,164);
+}
+.orange_strip_dark
+{
+    width: 900px;
+    float: left;
+    height: 10px;
+    margin-top: 5px;
+    background-color: rgb(185,118,40);
+}
+.blue_strip
+{
+    width: 700px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 100px;
+    height: 2px;
+    background-color: rgb(20,150,164);
+}
+.viewall
+{
+    float: left;
+    margin-top: 95px;
+    margin-left: -50px;
+    color: rgb(214,152,79);
+}
+.arow
+{
+
+}
+.side_panels
+{
+    
+    float: left;
+    margin-left: 100px;
+    height:220px;
+   
+}
+.left
+{
+    
+    float: left;
+    margin-left: 100px;
+    width: 100px;
+    height:200px;
+    border-right: 2px solid rgb(20,150,164);
+}
+
+.right
+{
+    position:absolute;
+    width:500px;
+    float:right;
+    height:220px;
+    margin-left:205px;
+    margin-right: 100px;
+    
+    
+}
+.rightest
+{
+    padding-left:700px;
+    float:right;
+    position:absolute;
+  
+   width:20px;
+   height:50px;
+  
+    }
+
+.clear
+{
+    clear: both;
+    padding: 0;
+}
+.img1
+{
+    background-color:Aqua;
+    margin-top:10px;
+    margin-left:10px;
+    width:230px;
+    float:left;
+    height:200px;
+ }
+.img2
+{
+    background-color:teal;
+    margin-top:10px;
+    margin-right:10px;
+    width:230px;
+    float:right;
+    height:200px;
+ }
+
+.spa
+{
+    width:180px;
+}
+
+.titles
+{
+    float: left;
+    color: rgb(20,150,164);
+    font-style: italic;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+
+
+
+
+.section_search
+{
+    float: left;
+    margin-left: -55px;
+    margin-top: 30px;
+}
+
+
+.white_strip_thick
+{
+    width: 900px;
+    float: left;
+    height: 25px;
+    background-color: white;
+}
+.footer
+{
+    float: left;
+    background-color: rgb(221,221,221);
+    padding: 0;
+    width: 900px;
+    
+}
+.foooter_lists
+{
+    float: left;
+}
+.footer_elements
+{
+    margin-top: 10px;
+    list-style-type: none;
+    list-style-image: none;
+}
+.footer_title
+{
+    font-size: large;
+    font-weight: bolder;
+}
+.list
+{
+    float: left;
+    margin-left: 100px;
+}
+.facebook
+{
+    float: left;
+    width: 5px;
+}
+.twitter
+{
+    float: left;
+    width: 5px;
+}
+.google
+{
+    float: left;
+    width: 5px;
+}
+.phone
+{
+    float: left;
+    width: 5px;
+}
+
+.footer_elements_connect
+{
+    margin-top: 10px;
+    margin-left: 3px;
+    list-style-type: none;
+}
+.bottom
+{
+    width: 900px;
+    background-color: rgb(82,82,82);
+    float: left;
+}
+.about
+{
+    margin-left: 20px;
+    float: left;
+    color: white;
+}
+
+#tav
+{
+    float: right;
+    margin-right:50px;
+    color: white;
+}

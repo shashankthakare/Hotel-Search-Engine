@@ -1,0 +1,52 @@
+.chile, .cycle, .ford, .road, .sea_resort, .spa{
+	background: url(sprites.png) no-repeat;
+}
+
+.chile
+{
+    background:sprites.png;
+	background-position: -49px -52px ;
+	width: 257px;
+	height: 95px;
+}
+
+.cycle
+{
+    background:sprites.png;
+	background-position: -53px -163px ;
+	width: 256px;
+	height: 96px;
+}
+
+.ford
+{
+    background:sprites.png;
+	background-position: -52px -299px ;
+	width: 255px;
+	height: 164px;
+}
+
+.road
+{
+    background:sprites.png;
+	background-position: -330px -50px ;
+	width: 253px;
+	height: 166px;
+}
+
+.sea_resort
+{
+    background:sprites.png;
+	background-position: -331px -229px ;
+	width: 252px;
+	height: 96px;
+}
+
+.spa
+{
+    background:sprites.png;
+	background-position: -330px -341px ;
+	width: 248px;
+	height: 98px;
+}
+
